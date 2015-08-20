@@ -5,11 +5,7 @@ Flat UI is a beautiful theme for [Bootstrap](http://getbootstrap.com). We have r
 To get started, check out [getting started page](http://designmodo.github.io/Flat-UI/docs/getting-started.html) or follow instructions below.
 
 
-## Links:
 
-+ [Demo Page](http://designmodo.github.io/Flat-UI/)
-+ [Download PSD](http://designmodo.com/flat-free/) (for designers)
-+ [Flat UI Pro 1.3.2](http://designmodo.com/flat/) (from $39)
 
 
 ## Quick start
@@ -81,7 +77,7 @@ Flat UI's documentation, included in this repo in the docs directory and publicl
 
 ## SASS support
 
-If you are interested in SASS source files - you can visit this project made by @wingrunr21: 
+If you are interested in SASS source files - you can visit this project made by @wingrunr21:
 [Designmodo's Flat-UI ported to SASS with support for Flat-UI Pro](https://github.com/wingrunr21/flat-ui-sass)
 
 
