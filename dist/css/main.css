@@ -69,14 +69,16 @@ h4:hover {
   text-decoration: underline;
 }
 
-.big-h5-text {
+p.big-h5-text {
   font-family: 'Fugaz One', cursive;
   display: block;
   text-align: center;
-  color: #2f4154;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: overline;
   margin-top: 4px;
+  font-size: 24px;
+  padding-top: 24px;
 }
 
 /*block color*/
@@ -119,8 +121,8 @@ h4:hover {
 
   margin: 0px;
 }
-.container-fluid.bg {
-  background-color: #19b698;
+.container-fluid.bg-two {
+  background-color: #ffffff;
   padding-top: 12px;
   padding-bottom:12px ;
 
@@ -136,7 +138,7 @@ h4:hover {
  }
  .h6-well {
    color: #e74c3c;
-   background-image: url("");
+
  }
 
 
@@ -144,4 +146,26 @@ h4:hover {
   color: #1abc9c;
   background-color: #ecf0f1;
   border-color: #1abc9c;
+}
+
+.number{
+  color: #e74c3c;
+  font-weight: 17px;
+  font-family: 'Shojumaru', cursive;
+}
+
+.well {
+  cursor: url('../../dist/img/cursor/best-choice.png'), default;
+}
+.container-fluid.bg{
+  background-image: url("/../Flat-UI-master/dist/img/bg_1.jpg");
+  background-repeat: no-repeat;
+
+
+}
+
+
+.lolkin{
+  min-height: lol;
+  min-width: lol;
 }

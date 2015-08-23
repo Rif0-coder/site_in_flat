@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 < lang="en">
 <head>
+
   <meta charset="utf-8">
   <title>Flat UI - Free Bootstrap Framework and Theme</title>
   <meta name="description"
@@ -19,10 +20,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- end -->
   <!-- fonts by google -->
+  <link href='http://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Nova+Flat' rel='stylesheet' type='text/css'>
   <!-- /end fonts -->
+
+  <!--lightcase.css-->
+  <link rel="stylesheet" href="dist/css/modal/lightcase.css" type="text/css"/>
+  <link rel="stylesheet" href="dist/css/modal/font-lightcase.css" type="text/css"/>
+  <link rel="stylesheet" href="dist/css/modal/lightcase-max-640.css" type="text/css"/>
+  <link rel="stylesheet" href="dist/css/modal/lightcase-min-641.css" type="text/css"/>
+
+  <!--end-->
+
   <link href="docs/assets/css/demo.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -31,9 +42,7 @@
   <script src="dist/js/vendor/respond.min.js"></script>
   <![endif]-->
   <script src="dist/js/slider/modernizr.min.js"></script>
-  <!--prefix-free connect-->
-  <script src="dist/js/prefixfree.min.js"></script>
-  <!--end-->
+
 </head>
 <header>
   <div class="container-fluid">
@@ -106,25 +115,19 @@
 </div>
 <!--add tile block in body-->
 
-<div class="container-fluid">
+<div class="container-fluid bg">
   <div class="row">
     <div class="col-xs-12">
-      <div class="big-h5-text">
-        <h5>Мы осуществляем следующие виды работ:</h5>
-      </div>
+      <p class="big-h5-text">Мы осуществляем следующие виды работ:</p>
     </div>
   </div>
-</div>
-<div class="container-fluid">
   <div class="row">
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
       <div class="tile">
         <img src="dist/img/icons/png/design.png" alt="" class="tile-image big-illustration">
-
         <h3 class="tile-title">Дизайн логотипов,банеров и сайтов</h3>
-
         <p>text</p>
-        <a href="" class="btn btn-primary btn-large btn-block">Подробнее</a>
+        <a href="" class="btn btn-primary btn-large btn-block " data-rel="lightcase">Подробнее</a>
       </div>
     </div>
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
@@ -161,7 +164,7 @@
     </div>
   </div>
 </div>
-<div class="container-fluid bg">
+<div class="container-fluid bg-two">
 
   <div class="col-xs-12 col-md-5 col-sm-6 col-lg-5">
     <div class="jumbotron form">
@@ -203,7 +206,7 @@
             <option value="7">Свой дизайн</option>
           </select>
         </div>
-        <button type="button" title="Жмяк" class="btn btn-primary btn-block" data-placement="bottom"
+        <button type="button" title="Жмяк хуяк" class="btn btn-primary btn-block" data-placement="bottom"
                 data-toggle="tooltip">Отправить заявку
         </button>
 
@@ -215,16 +218,17 @@
       <h6><img src="dist/img/icons/png/five.png" alt=""/> причин,почему стоит заказать сайт у нас:</h6>
 
       <ul class="list-group">
-        <li class="list-group-item">Item 1</li>
-        <li class="list-group-item">Item 2</li>
-        <li class="list-group-item">Item 3</li>
-        <li class="list-group-item">Item 4</li>
-        <li class="list-group-item">Item 5</li>
+        <li class="list-group-item"><span class="number">1</span><a href="dist/img/icons/png/Book.png" data-rel="lightcase" showTitle="true" title="cfrecfr"><title>cfrvgjrn</title >pYour link description or thumb</a>text thtbhtbrg</li>
+        <li class="list-group-item"><span class="number">2</span></li>
+        <li class="list-group-item"><span class="number">3</span></li>
+        <li class="list-group-item"><span class="number">4</span></li>
+        <li class="list-group-item"><span class="number">5</span></li>
 
       </ul>
     </div>
   </div>
-  </div>
+</div>
+
 
 
 </body>
@@ -244,29 +248,27 @@
 <script src="dist/js/vendor/video.js"></script>
 <script src="dist/js/flat-ui.min.js"></script>
 <script src="docs/assets/js/application.js"></script>
-<script src="dist/js/slider/classie.js"></script>
-<script src="dist/js/slider/photostack.js"></script>
-<script>
-  [].slice.call(document.querySelectorAll('.photostack')).forEach(function (el) {
-    new Photostack(el);
-  });
 
-  new Photostack(document.getElementById('photostack-1'), {
-    callback: function (item) {
-      //console.log(item)
-    }
-  });
-  new Photostack(document.getElementById('photostack-2'), {
-    callback: function (item) {
-      //console.log(item)
-    }
-  });
-  new Photostack(document.getElementById('photostack-3'), {
-    callback: function (item) {
-      //console.log(item)
-    }
+<!--start lightcase -->
+<script src="dist/js/modal/lightcase.js"></script>
+<script src="dist/js/modal/jquery.events.touch.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+
+    $('a[data-rel=lightcase]').lightcase({
+      transition: 'scrollHorizontal',
+      showSequenceInfo: false,
+      showTitle: true
+    });
   });
 </script>
+<script>
+  $('a[data-rel=lightcase]').lightcase({
+    swipe: true
+  });
+</script>
+<!--end-->
+
 <script>
   videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
 </script>
