@@ -29,6 +29,7 @@
   border-radius: 50%;
 }
 .ih-item.circle .img {
+  margin-top: 20px;
   position: relative;
   width: 220px;
   height: 220px;
