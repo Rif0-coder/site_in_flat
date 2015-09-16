@@ -17,12 +17,16 @@
   <!-- fortvesome connect -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- end -->
+
   <!-- fonts by google -->
   <link href='http://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Nova+Flat' rel='stylesheet' type='text/css'>
   <!-- /end fonts -->
+  <!--animate css add-->
+  <link rel="stylesheet" href="dist/css/animate.css" type="text/css"/>
+  <!---->
   <link href="docs/assets/css/demo.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -31,9 +35,17 @@
   <script src="dist/js/vendor/respond.min.js"></script>
   <![endif]-->
   <script src="dist/js/slider/modernizr.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- or use local jquery -->
+  <script src="dist/js/validation/jqBootstrapValidation.js"></script>
+  <!--connect waypoint-->
+  <script src="dist/js/jq/jquery.waypoints.js"></script>
+  <!--end-->
 
 </head>
 <header>
+
+  <!--new container-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 col-xs-12">
@@ -71,22 +83,26 @@
     </div>
   </div>
 </header>
+
+
+<!--new container-->
 <div class="container-fluid">
+
   <div class="row">
     <div class="col-md-12">
       <div class="bs-example">
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel" class="carousel slide hidden-xs">
           <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators" style="top: 23px">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <div class="active item"><img src="dist/img/slider/1.png" alt=""></div>
-            <div class="item"><img src="dist/img/slider/1.png" alt=""></div>
-            <div class="item"><img src="dist/img/slider/1.png" alt=""></div>
+            <div class="active item"><img src="dist/img/slider/1.png" style="max-width:100%" alt=""></div>
+            <div class="item"><img src="dist/img/slider/1.png"style="max-width:100%"  alt=""></div>
+            <div class="item"><img src="dist/img/slider/1.png" style="max-width:100%"alt=""></div>
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left-flat" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -96,29 +112,30 @@
     </div>
   </div>
 </div>
-<!--add tile block in body-->
 
+
+<!--new container-->
 <div class="container-fluid bg ">
+
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <p class="big-h5-text">Мы осуществляем следующие виды работ:</p>
     </div>
   </div>
+
   <div class="row">
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-      <div class="tile">
+      <div class="tile animated boxHidded delay-1s">
         <img src="dist/img/icons/png/design.png" alt="" class="tile-image big-illustration">
 
         <h3 class="tile-title">Дизайн логотипов,банеров и сайтов</h3>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores doloribus optio repellat.</p>
-
         <a href="#" class="btn btn-primary btn-large btn-block" alt="cerfvhrfb">Подробнее</a>
       </div>
-
     </div>
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-      <div class="tile">
+      <div class="tile animated boxHidded delay-0s">
         <img src="img/icons/svg/ribbon.svg" alt="ribbon" class="tile-hot-ribbon">
         <img src="dist/img/icons/png/landing.png" alt="" class="tile-image big-illustration">
 
@@ -129,7 +146,7 @@
       </div>
     </div>
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-      <div class="tile">
+      <div class="tile animated boxHidded delay-1s">
         <img src="dist/img/icons/png/wordpress.png" alt="" class="tile-image big-illustration">
 
         <h3 class="tile-title">Корпоративный сайт на CMS Wordpress</h3>
@@ -139,7 +156,7 @@
       </div>
     </div>
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-      <div class="tile">
+      <div class="tile animated boxHidded delay-1s">
         <img src="img/icons/svg/ribbon.svg" alt="ribbon" class="tile-hot-ribbon">
         <img src="dist/img/icons/png/joomla.png" alt="Chat" class="tile-image">
 
@@ -148,88 +165,21 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloribus excepturi harum!</p>
         <a class="btn btn-primary btn-large btn-block" href="#">Подробнее</a>
       </div>
+
     </div>
   </div>
 </div>
-<div class="container-fluid " style="margin-top: 27px;">
 
-  <div class="col-xs-12 col-md-5 col-sm-6 col-lg-5">
-    <div class="jumbotron form">
-      <div class="container">
-
-        <h6> Решил доверить создание сайта профессионалам??</h6>
-
-        <div class="alert alert-success">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-          <strong></strong>Окей,заполните внимательно поля формы
-        </div>
-
-
-        <div class="form-group">
-          <input type="name" class="form-control" id="inputLname" placeholder="Имя">
-        </div>
-        <div class="form-group">
-          <input type="name2" class="form-control" id="inputName" placeholder="Фамилия">
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <textarea class="form-control message-text" rows="3"
-                      placeholder="Напишите нам. Ваше обращение очень важно для нас."></textarea>
-        </div>
-        <div class="form-group">
-          <p>Выберите спектр услуг, необходимый вам</p>
-        </div>
-        <div class="form-group">
-          <select data-toggle="select" multiple class="form-control multiselect multiselect-info mrs mbm" title="">
-            <option value="0" selected>Создание сайта</option>
-            <option value="1">Создание лендинг пейдж</option>
-            <option value="2">Сайт на CMS</option>
-            <option value="3">CMS Joomla</option>
-            <option value="4">CMS Wordpess</option>
-            <option value="5">Нужна консультация</option>
-            <option value="6">Типовый сайт</option>
-            <option value="7">Свой дизайн</option>
-          </select>
-        </div>
-        <button type="button" title="Жмяк хуяк" class="btn btn-primary btn-block" data-placement="bottom"
-                data-toggle="tooltip">Отправить заявку
-        </button>
-
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-12  col-sm-6 col-md-7 col-lg-7">
-    <div class="well">
-      <h6><img src="dist/img/icons/png/five.png" alt=""/> причин,почему стоит заказать сайт у нас:</h6>
-
-      <ul class="list-group">
-        <li class="list-group-item"><span class="number">1</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </li>
-        <li class="list-group-item"><span class="number">2</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </li>
-        <li class="list-group-item"><span class="number">3</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </li>
-        <li class="list-group-item"><span class="number">4</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </li>
-        <li class="list-group-item"><span class="number">5</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
 <div class="container-fluid bg-two">
   <h5>Landing Page <span class="vs"> VS </span>Content manager system</h5>
 
   <div class="hidden-xs hidden-sm  col-md-6 col-lg-6 ">
     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-1 col-md-offset-1">
-
     </div>
     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
       <!-- normal -->
       <div class="ih-item circle effect13 bottom_to_top" style="z-index: 1"><a href="#">
-        <div class="img"><img src="dist/img/icons/png/vs/lp.jpg" alt="img"></div>
+        <div class="img animated boxHidded delay-1s"><img src="dist/img/icons/png/vs/lp.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back">
             <h3>CMS</h3>
@@ -257,7 +207,7 @@
     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
       <!-- normal -->
       <div class="ih-item circle effect13 bottom_to_top" style="z-index: 1"><a href="#">
-        <div class="img"><img src="dist/img/icons/png/vs/lp.jpg" alt="img"></div>
+        <div class="img animated boxHidded delay-1s"><img src="dist/img/icons/png/vs/lp2.jpg" alt="img"></div>
         <div class="info">
           <div class="info-back">
             <h3>Landing Page</h3>
@@ -270,42 +220,239 @@
       <!-- end normal -->
     </div>
     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
     </div>
   </div>
 </div>
 
 <!--block3-->
-<div class="container-fluid bg-three">
+<div class="container-fluid bg">
   <div class="row">
-    <div class="col-md-12">
-      <div class="col-xs-12 col-sm-16 col-md-6 col-lg-6 ">
-<h5 class="three">Система управления контентом</h5>
-        <hr/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aspernatur, maxime? Commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea praesentium vel velit?</p>
-
-        <p>Delectus magnam mollitia nemo omnis pariatur perferendis quae, quisquam quos repudiandae veniam!</p>
-
-        <p>Commodi deleniti eos ex facilis iste placeat praesentium quaerat sint sunt veniam.</p>
-      </div>
-
+    <div class="col-md-12 col-lg-12">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-        <h5 class="three">Одностраничный сайт</h5>
-        <hr/>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis debitis recusandae.</p>
-
-        <p>Aut cumque dignissimos id laudantium libero maiores, modi nemo neque omnis voluptatem?</p>
-
-        <p>Accusamus accusantium atque cupiditate enim eos fugiat hic iste non repellendus velit.</p>
-
-        <p>Aspernatur deleniti dolor eum expedita laboriosam non optio placeat porro, quisquam sit.</p>
+        <div class="tile">
+          <h5 class="three">Система управления контентом</h5>
+          <hr/>
+          <p>Content managment system (CMS)- информационная система, используемая для обеспеченяи и организации
+            совместного процесса создания, редактирования и управления содержимым сайта. </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="tile">
+          <h5 class="three">Одностраничный сайт</h5>
+          <hr/>
+          <div class="content-line">
+          </div>
+          <p>Одностраничный сайт призван фокусировать внимание пользователей на самых важных моментах. Такие сайты несут
+            только нужную потенциальному клиенту инормацию. </p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+<div class="container-fluid bg-four">
+  <div class="row">
+    <h5><i class="fa fa-usd"></i>Цены:</h5>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="margin-top: 12px">
+      <div class="thumbnail">
+        <img data-src="3" alt="">
+
+        <div class="caption">
+          <h5 class="title-price">Title</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, voluptate!
+          </p>
+          <hr/>
+          <span class="vs">1 200 000 <i class="fa fa-rub"></i></span>
+          <hr/>
+          <p>
+            <a href="#" class="btn btn-primary btn-block">Оставить заявку</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div class="thumbnail">
+        <img data-src="3" alt="">
+
+        <div class="caption">
+          <h5 class="title-price">Title</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, voluptate!
+          </p>
+          <hr/>
+          <span class="vs">1 200 000 <i class="fa fa-rub"></i></span>
+          <hr/>
+          <p>
+            <a href="#" class="btn btn-primary btn-block">Оставить заявку</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="margin-top: 12px">
+      <div class="thumbnail">
+        <img data-src="3" alt="">
+
+        <div class="caption">
+          <h5 class="title-price">Title</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, voluptate!
+          </p>
+          <hr/>
+          <span class="vs">1 200 000 <i class="fa fa-rub"></i></span>
+          <hr/>
+          <p>
+            <a href="#" class="btn btn-primary btn-block">Оставить заявку</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid " style="margin-top: 27px;">
+  <div class="row">
+    <div class="col-xs-12 col-md-5 col-sm-6 col-lg-5">
+      <div class="jumbotron form">
+        <div class="container">
+          <h6> Решил доверить создание сайта профессионалам??</h6>
+
+          <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong></strong>Окей,заполните внимательно поля формы
+          </div>
+          <form action="http://formspree.io/yangelbd@gmail.com" method="POST" target="_blank">
+            <div class="form-group">
+              <div class="form-group">
+                <input type="hidden" name="_subject" value="Новое сообщение!"/>
+              </div>
+
+              <input type="name" class="form-control" id="inputLname" name="name" placeholder="Имя"
+                     data-validation-matches-match="name" required>
+            </div>
+
+            <div class="form-group">
+              <input type="name2" class="form-control" id="inputFname" name="name" placeholder="Фамилия"
+                     data-validation-matches-match="name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="inputEmail1" name="_replyto" placeholder="Email"
+                     data-validation-matches-match="email" required>
+
+            </div>
+            <div class="form-group">
+            <textarea class="form-control message-text" rows="3"
+                      placeholder="Напишите нам. Ваше обращение очень важно для нас."
+                      data-validation-matches-match="text" required name="name"> </textarea>
+            </div>
+            <div class="form-group">
+              <p>Выберите спектр услуг, необходимый вам</p>
+            </div>
+            <div class="form-group">
+              <select data-toggle="select" multiple class="form-control multiselect multiselect-info mrs mbm" title="">
+                <option value="0" selected>Создание сайта</option>
+                <option value="1">Создание лендинг пейдж</option>
+                <option value="2">Сайт на CMS</option>
+                <option value="3">CMS Joomla</option>
+                <option value="4">CMS Wordpess</option>
+                <option value="5">Нужна консультация</option>
+                <option value="6">Типовый сайт</option>
+                <option value="7">Свой дизайн</option>
+              </select>
+            </div>
+            <button type="submit" title="Жмяк" class="btn btn-primary btn-block" data-placement="bottom"
+                    data-toggle="tooltip" value="Send">Отправить заявку
+            </button>
+        </div>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-xs-12  col-sm-6 col-md-7 col-lg-7">
+      <div class="well">
+        <h6><img src="dist/img/icons/png/five.png" alt=""/> причин,почему стоит заказать сайт у нас:</h6>WS
+        <ul class="list-group">
+          <li class="list-group-item"><span class="number">1</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </li>
+          <li class="list-group-item"><span class="number">2</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </li>
+          <li class="list-group-item"><span class="number">3</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </li>
+          <li class="list-group-item"><span class="number">4</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </li>
+          <li class="list-group-item"><span class="number">5</span> Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('.tile')
+    .waypoint( function(dir) {
+      if ( dir === 'down' )
+        $(this)
+          .removeClass('bounceInDown')
+          .addClass('bounceIn');
+      else
+        $(this)
+          .removeClass('bounceIn')
+          .addClass('bounceInDown');
+    }, {
+      offset: 290
+    })
+
+    .waypoint( function(dir) {
+      if ( dir === 'down' )
+        $(this)
+          .removeClass('zooIn')
+          .addClass('zoomInDown');
+      else
+        $(this)
+          .removeClass('zoomInDown')
+          .addClass('zoomIn');
+    }, {
+      offset:-290
+    });
+
+  $('.img')
+    .waypoint( function(dir) {
+      if ( dir === 'down' )
+        $(this)
+          .removeClass('jello')
+          .addClass('shake');
+      else
+        $(this)
+          .removeClass('shake')
+          .addClass('jello');
+    }, {
+      offset: 190
+    })
+
+    .waypoint( function(dir) {
+      if ( dir === 'down' )
+        $(this)
+          .removeClass('shake')
+          .addClass('jello');
+      else
+        $(this)
+          .removeClass('jello')
+          .addClass('jello');
+    }, {
+      offset:-290
+    });
+
+
+
+</script>
 </body>
 <script>
   $(document).ready(function () {
@@ -317,8 +464,38 @@
 <script>
   $(function () {
     $('[data-toggle=tooltip]').tooltip();
+    $('form').validate({
+      rules: {
+        firstname: {
+          minlength: 3,
+          maxlength: 15,
+          required: true
+        },
+        lastname: {
+          minlength: 3,
+          maxlength: 15,
+          required: true
+        }
+      },
+      highlight: function (element) {
+        $(element).closest('.form-group').addClass('has-error');
+      },
+      unhighlight: function (element) {
+        $(element).closest('.form-group').removeClass('has-error');
+      },
+      errorElement: 'span',
+      errorClass: 'help-block',
+      errorPlacement: function (error, element) {
+        if (element.parent('.input-group').length) {
+          error.insertAfter(element.parent());
+        } else {
+          error.insertAfter(element);
+        }
+      }
+    });
   });
 </script>
+
 <script src="dist/js/vendor/jquery.min.js"></script>
 <script src="dist/js/vendor/video.js"></script>
 <script src="dist/js/flat-ui.min.js"></script>

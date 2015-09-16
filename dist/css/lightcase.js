@@ -8,6 +8,7 @@
  * @version		2.1.1 (12/07/2015)
  */
 
+
 ;(function ($) {
 	window.lightcase = {
 		cache : {},
@@ -240,7 +241,7 @@
 			if (lightcase.cache.originalObject) {
 				lightcase.restoreObject();
 			}
-			
+
 			lightcase.createObject();
 		},
 
@@ -329,7 +330,7 @@
 
 			// Call onStart hook functions
 			lightcase.callHooks(lightcase.settings.onStart);
-			
+
 			// Call hook function on initialization
 
 			// Add sequenceInfo to the content holder or hide if its empty
@@ -446,7 +447,7 @@
 
 			// Set default dimensions
 			var dimensions = {
-				objectWidth : $object.attr('width') ? $object.attr('width') : $object.attr('data-width'), 
+				objectWidth : $object.attr('width') ? $object.attr('width') : $object.attr('data-width'),
 				objectHeight : $object.attr('height') ? $object.attr('height') : $object.attr('data-height')
 			};
 
@@ -466,7 +467,7 @@
 				// Calculate the difference between screen width/height and image width/height
 				dimensions.differenceWidthAsPercent = parseInt(100 / dimensions.maxWidth * dimensions.objectWidth);
 				dimensions.differenceHeightAsPercent = parseInt(100 / dimensions.maxHeight * dimensions.objectHeight);
-				
+
 				switch (lightcase.objectData.type) {
 					case 'image' :
 					case 'flash' :
@@ -519,7 +520,7 @@
 				'max-width' : $object.attr('data-max-width') ? $object.attr('data-max-width') : dimensions.maxWidth,
 				'max-height' : $object.attr('data-max-height') ? $object.attr('data-max-height') : dimensions.maxHeight
 			});
-			
+
 			$contentInner.css({
 				'width' : $object.outerWidth(),
 				'height' : $object.outerHeight(),
@@ -682,7 +683,7 @@
 		 */
 		processContent : function () {
 			lightcase.busy = true;
-			
+
 			switch (lightcase.settings.transitionOut) {
 				case 'scrollTop' :
 				case 'scrollRight' :
@@ -763,7 +764,7 @@
 			if (lightcase.settings.closeOnOverlayClick === true) {
 				$overlay.css('cursor', 'pointer').click(function (event) {
 					event.preventDefault();
-					
+
 					lightcase.lightcaseClose();
 				});
 			}
@@ -782,7 +783,7 @@
 					$prev.unbind('click');
 					lightcase.cache.action = 'prev';
 					lightcase.nav.$prevItem.click();
-					
+
 					if (lightcase.isSlideshowEnabled()) {
 						lightcase.stopTimeout();
 					}
@@ -790,11 +791,11 @@
 
 				$next.click(function (event) {
 					event.preventDefault();
-					
+
 					$next.unbind('click');
 					lightcase.cache.action = 'next';
 					lightcase.nav.$nextItem.click();
-					
+
 					if (lightcase.isSlideshowEnabled()) {
 						lightcase.stopTimeout();
 					}
@@ -810,7 +811,7 @@
 						lightcase.stopTimeout();
 					});
 				}
-				
+
 				// Enable swiping if activated
 				if (lightcase.settings.swipe === true) {
 					if ($.isPlainObject($.event.special.swipeleft)) {
@@ -876,7 +877,7 @@
 		startTimeout : function () {
 			$play.hide();
 			$pause.show();
-			
+
 			lightcase.cache.action = 'next';
 			$nav.removeClass(lightcase.settings.classPrefix + 'paused');
 
@@ -1015,9 +1016,9 @@
 					startOpacity = $object.css('opacity'),
 					endTransition = {},
 					endOpacity = opacity ? opacity : isInTransition ? 1 : 0;
-				
+
 				if (!lightcase.open && isInTransition) return;
-					
+
 				startTransition['opacity'] = startOpacity;
 				endTransition['opacity'] = endOpacity;
 
@@ -1064,7 +1065,7 @@
 					endTransition = {},
 					endOpacity = isInTransition ? 1 : 0,
 					endOffset = isInTransition ? '50%' : '-50%';
-				
+
 				if (!lightcase.open && isInTransition) return;
 
 				switch (transition) {
@@ -1080,7 +1081,7 @@
 						startOffset = isInTransition ? '150%' : '50%';
 						endOffset = isInTransition ? '50%' : '150%';
 						break;
-					case 'scrollHorizontal' : 
+					case 'scrollHorizontal' :
 						startOffset = isInTransition ? '150%' : '50%';
 						endOffset = isInTransition ? '50%' : '-50%';
 						break;
@@ -1093,11 +1094,11 @@
 
 				if (lightcase.cache.action === 'prev') {
 					switch (transition) {
-						case 'scrollHorizontal' : 
+						case 'scrollHorizontal' :
 							startOffset = isInTransition ? '-50%' : '50%';
 							endOffset = isInTransition ? '50%' : '150%';
 							break;
-						case 'scrollVertical' : 
+						case 'scrollVertical' :
 							startOffset = isInTransition ? '150%' : '50%';
 							endOffset = isInTransition ? '50%' : '-50%';
 							break;
@@ -1158,21 +1159,21 @@
 				startTransition[lightcase.support.transition + 'transform'] = startScale;
 
 				endTransition['opacity'] = endOpacity;
-					
+
 				$object.css(startTransition).show();
 
 				// Css transition
 				if (lightcase.support.transitions) {
 					endTransition[lightcase.support.transition + 'transform'] = endScale;
 					endTransition[lightcase.support.transition + 'transition'] = speed + 'ms ease';
-					
+
 					setTimeout(function () {
 						$object.css(endTransition);
-					
+
 						setTimeout(function () {
 							$object.css(lightcase.support.transition + 'transform', '');
 							$object.css(lightcase.support.transition + 'transition', '');
-							
+
 							if (callback && (lightcase.open || !isInTransition)) {
 								callback();
 							}
@@ -1224,7 +1225,7 @@
 		 */
 		restoreObject : function () {
 			var $object = $('[id^="' + lightcase.settings.idPrefix + 'temp-"]');
-		
+
 			$object.attr('id', $.data(lightcase.cache.originalObject, 'cache').id);
 			$object.html($.data(lightcase.cache.originalObject, 'cache').content);
 		},
@@ -1277,7 +1278,7 @@
 		watchResizeInteraction : function () {
 			$(window).resize(lightcase.resize);
 		},
-		
+
 		/**
 		 * Stop watching any resize interaction related to lightcase.
 		 *
@@ -1304,7 +1305,7 @@
 		unwatchScrollInteraction : function () {
 			$(window).off('scroll', lightcase.cacheScrollPosition);
 		},
-		
+
 		/**
 		 * Restores to the original scoll position before
 		 * lightcase got initialized.
@@ -1415,7 +1416,7 @@
 			$nav.children().hide();
 
 			lightcase.restoreScrollPosition();
-			
+
 			// Call onClose hook functions
 			lightcase.callHooks(lightcase.settings.onClose);
 
@@ -1514,7 +1515,7 @@
 
 			// Call onCleanup hook functions
 			lightcase.callHooks(lightcase.settings.onCleanup);
-			
+
 			// Restore cache
 			lightcase.cache = {};
 		}
