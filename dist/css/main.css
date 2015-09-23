@@ -1,227 +1,231 @@
 .active .item {
-    color: #666;
-    height: 500px;
-    min-height: 300px;
-    /* Align the text vertically center. */
-    font-size: 52px;
-    text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #666;
+  height: 500px;
+  min-height: 300px;
+  /* Align the text vertically center. */
+  font-size: 52px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img {
-    line-height: 1;
+  line-height: 1;
 }
 
 .carousel-inner {
-    margin-top: 65px;
+  margin-top: 65px;
 }
 
 .carousel-control {
-    top: 50%;
-    border: 3px solid #E6EFEF;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    border-radius: 23px;
-    background: #36C3A8;
-    width: 80px;
-    height: 40px;
-    margin-top: -20px;
-    font-size: 60px;
-    font-weight: 100;
-    line-height: 25px;
-    color: #fff;
-    text-align: center;
-    opacity: .5;
+  top: 50%;
+  border: 3px solid #E6EFEF;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  background: #36C3A8;
+  width: 80px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+  opacity: .5;
 }
 
 .bs-example {
-    margin: 20px;
+  margin: 20px;
 }
 
 /* cancel background image gradient */
 
 .carousel-control.left-flat {
-    right: auto;
-    left: 15px;
+  right: auto;
+  left: 15px;
 }
 
 /* override background image gradient */
 
 .carousel-control.right-flat {
-    right: 15px;
-    left: auto;
+  right: 15px;
+  left: auto;
 }
 
 .navbar {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 h5.title-price {
-    text-align: center;
-    font-family: "Lato", Helvetica, Arial, sans-serif;
-    color: #e74c3c;
+  text-align: center;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: #e74c3c;
 }
 
 h4 {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 260px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 260px;
 }
 
 h4:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h5 {
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 34px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 34px;
 }
 
 h5.three {
-    text-decoration: none;
-    color: #19b698;
-    text-align: center;
+  text-decoration: none;
+  color: #19b698;
+  text-align: center;
 
 }
 
 p.big-h5-text {
-    font-family: 'Fugaz One', cursive;
-    display: block;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: overline;
-    margin-top: 4px;
-    font-size: 24px;
-    padding-top: 44px;
+  font-family: 'Fugaz One', cursive;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: overline;
+  margin-top: 4px;
+  font-size: 24px;
+  padding-top: 44px;
 }
 
 /*block color*/
 
 .tile-title {
-    color: #2f4154;
-    font-family: 'Lato', sans-serif;
+  color: #2f4154;
+  font-family: 'Lato', sans-serif;
 }
 
 .btn-primary:hover {
-    background-color: #e74c3c;
+  background-color: #e74c3c;
 }
 
 /*end*/
 .colored {
-    width: auto;
-    height: 750px;
-    background-color: #1ABC9C;
+  width: auto;
+  height: 750px;
+  background-color: #1ABC9C;
 }
 
 .message-text {
-    resize: vertical;
-    position: relative;
-    min-height: 150px;
-    height: 200px;
+  resize: vertical;
+  position: relative;
+  min-height: 150px;
+  height: 200px;
 }
 
 .fa {
-    color: #e74c3c;
+  color: #e74c3c;
 }
 
 .tile.index {
 
-    margin: 0px;
+  margin: 0px;
 }
 
 .container-fluid.bg-two {
-    background-color: #2f4154;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    height:240px;
+  background-color: #2f4154;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 240px;
 
 }
 
 .container-fluid.bg-four {
-    display: block;
-    height: 700px;
+  display: block;
+  height: 760px;
   background-image: url('../img/slider/2.png');
-
-
+}
+.container-fluid.bg-six {
+  display: block;
+  height: 760px;
+  background-image: url('../img/slider/3.png');
 }
 
 .bg-vs {
-    background-image: url("/dist/img/bg-_3.jpg");
+  background-image: url("/dist/img/bg-_3.jpg");
 }
 
 h6 {
-    display: block;
-    text-align: center;
-    color: #2f4154;
-    text-transform: uppercase;
-    font-family: 'Fugaz One', cursive;
-    margin-top: 4px;
+  display: block;
+  text-align: center;
+  color: #2f4154;
+  text-transform: uppercase;
+  font-family: 'Fugaz One', cursive;
+  margin-top: 4px;
 }
 
 .h6-well {
-    color: #e74c3c;
+  color: #e74c3c;
 
 }
 
 .alert-success {
-    color: #1abc9c;
-    background-color: #ecf0f1;
-    border-color: #1abc9c;
+  color: #1abc9c;
+  background-color: #ecf0f1;
+  border-color: #1abc9c;
 }
 
 .number {
-    color: #e74c3c;
-    font-weight: 17px;
-    font-family: 'Shojumaru', cursive;
+  color: #e74c3c;
+  font-weight: 17px;
+  font-family: 'Shojumaru', cursive;
 }
 
 .well {
-    cursor: url('../../dist/img/cursor/targets2.png'), default;
+  cursor: url('../../dist/img/cursor/targets2.png'), default;
 }
 
 .container-fluid.bg {
-    background-image: url("/../Flat-UI-master/dist/img/bg_1.jpg");
-    background-repeat: no-repeat;
+  background-color: #e74c3c;
+  background-repeat: no-repeat;
 
 }
 
 .vs {
-    color: #e74c3c;
-    font-weight: 17px;
-    font-family: 'Shojumaru', cursive;
+  color: #e74c3c;
+  font-weight: 17px;
+  font-family: 'Shojumaru', cursive;
 }
 
 .vs1 {
-    display: block;
-    height: 100px;
+  display: block;
+  height: 100px;
 }
 
 .vs2 {
-    display: block;
-    height: 10px;
+  display: block;
+  height: 10px;
 }
 
 hr {
-    border-width: 2px;
-    border-top: 5.5px dashed #19b698;
+  border-width: 2px;
+  border-top: 5.5px dashed #19b698;
 
 }
 
 /*animate*/
-.boxHidded{
+.boxHidded {
   visibility: hidden;
 }
-.bounceIn,.bounceInDown{
+
+.bounceIn, .bounceInDown {
   visibility: visible;
 }
 
-.jello ,.shake {
+.jello, .shake {
   visibility: visible;
 }
 
