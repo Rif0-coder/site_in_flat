@@ -144,10 +144,13 @@ p.big-h5-text {
 }
 
 .container-fluid.bg-four {
-  display: block;
-  height: 760px;
-  background-image: url('../img/slider/2.png');
-}
+   display: block;
+   height: 760px;
+   background-image: url('../img/slider/2.png');
+ }
+
+
+
 .container-fluid.bg-six {
   display: block;
   height: 760px;
@@ -228,6 +231,4 @@ hr {
 .jello, .shake {
   visibility: visible;
 }
-
-
 

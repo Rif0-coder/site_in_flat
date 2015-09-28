@@ -3061,11 +3061,32 @@ fieldset[disabled] .input-group-btn .btn-default.active {
     margin-top: -64px;
     text-align: right;
     }
+  h5.three{
+    font-size: 14px;
+    text-align: center;
   }
+  h6{
+    font-size: 18px;
+    text-align: center;
+  }
+  .container-fluid{
+    background-image: none !important;
+    background-color: #19b698;
+  }
+  }
+
+@media (max-width: 760px) {
+  .container-fluid{
+    background-image: none !important;
+    background-color: #19b698 !important;
+  }
+}
+
 @media (min-width: 768px) {
   .pagination-plain {
     height: auto;
     }
+
   }
 .pagination-dropdown ul {
   left: 50%;
